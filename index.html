@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dijkstra Algorithm</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Algorytm Dijkstra </h1>
+        <form id="dijkstra-form">
+            <div class="form-control">
+                <label for="start-node-input">Start:</label>
+                <input type="text" id="start-node-input" name="start-node" required>
+            </div>
+            <div class="form-control">
+                <label for="end-node-input">End:</label>
+                <input type="text" id="end-node-input" name="end-node" required>
+            </div>
+            <div class="form-control">
+                <label for="graph-input">Graph:</label>
+                <textarea id="graph-input" name="graph" required></textarea>
+                <br>
+                <p>Przykład zapisania: A-B-1,A-C-2,B-D-5,C-D-6,D-E-7,E-G-8,D-G-8,D-F-9,F-G-1</p>
+            </div>
+            <button type="submit" class="btn">Znajdź najkrótszą ścieżkę</button>
+        </form>
+        <br>
+        <br>
+        <div id="result"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
